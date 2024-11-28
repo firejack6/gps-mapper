@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>APRS MAP</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" href="dependencies/leaflet.css" charset="utf-8">
+        <script src="dependencies/leaflet.js"></script>
+        <script src="dependencies/pmtiles.js"></script>
+        <script src="dependencies/protomaps-leaflet.js"></script>
+        <!-- <script src="./HTTPrequests/server.js" type="module"></script> -->
+        <meta http-equiv="Cache-Control" content="public">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+    </head>
+
+    <body>
+        <div id="topRow">
+            <div id="buttons">
+                <button id="settings" class="buttonClass">SETTINGS </button>
+                <button id="startCompass" class="buttonClass">ENABLE COMPASS</button>
+            </div>
+            <h3>DISTANCE: <h3 id="distance"></h3></h3>
+            <h3>Callsign: <span id=displayCallsign>Callsign</span></h3>
+            <h3>APRS Map</h3>
+        </div>
+        <p>LATEST: <span id="latestPos"></span></p>
+        
+        <div id="map" class=""></div>
+        <div id="settingsFrame" class="hidden">
+            <div style="display:flex;flex-direction:row;">
+            <button id="clearData" class="settingsButton">CLEAR DATA</button>
+
+                <div class="hidden">
+                    <label for="ip">SERVER IP ADDRESS</label>
+                    <input type="text" id="ip" name="ip" value="">
+                    <button id="IPsubmit" class="settingsButton">SUBMIT</button>
+                </div>
+                <div>
+                    <button id="callsign" class="settingsButton">SET CALLSIGN</button>
+                </div>
+                
+                <button class="settingsButton" id="rawpackets">VIEW RAW PACKETS</button>
+            </div>
+
+            <div>
+                <label for="site">Launch Site</label>
+                <select id="site">
+                    <option value="">Select</option>
+                    <option value="FAR">FAR</option>
+                    <option value="SPACEPORT">SPACEPORT</option>
+                    <option value="MIDOHIO">MIDOHIO</option>
+                    <option value="AMHERST">AMHERST</option>
+                    <option value="AKRON">AKRON</option>
+                </select>
+            </div>
+            
+        </div>
+
+    </body>
+    <script src="main.js" type="module"></script>
+    <script src="mapping.js" type="module"> </script>
+    <script src="heading.js" type="module"> </script>
+</html>

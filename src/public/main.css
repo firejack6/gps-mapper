@@ -1,0 +1,152 @@
+#map{
+    height: 80vh;
+  }
+  
+  #settingsFrame{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50vw;
+    top: 20vh;
+    z-index: 1000;
+    width: fit-content;
+    height: fit-content;
+    border: 20px solid orange;
+    background-color: orange;
+  }
+  
+  .settingsButton{
+    width: fit-content;
+    height: 10vh;
+    font-size: xx-large
+  }
+  
+  #site{
+    font-size: xx-large;
+  }
+  
+  .hidden{
+    display: none;
+  }
+  
+  #buttons{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .buttonClass{
+    height: 5vh;
+    width: 15vw;
+    text-align: center;
+    line-height: 1em;
+    font-size: 1.25vh;
+  }
+  
+  #FFL{
+    text-align: left;
+  }
+  
+  #FFR{
+    text-align: right;
+  }
+  
+  #FL{
+    text-align: left;
+  }
+  
+  #FR{
+    text-align: right;
+  }
+  
+  #CL{
+    text-align: left;
+  }
+  
+  #CR{
+    text-align: right;
+  }
+  
+  .green{
+    background-color: green;
+  }
+  
+  #compassContainer{
+    position: fixed;
+    transform: translate(-50%, 50%);
+    left: 50vw;
+    bottom: 15vh;
+    width: 30vh;
+    height: 30vh;
+    z-index: 20;
+  }
+  
+  #compassPNG{
+    height: 100%;
+    width: 100%;
+  }
+  
+  #compassCircle{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: grey;
+    /* transform: rotate(90deg); */
+    position: absolute;
+    border: 3px solid black;
+  }
+  
+  #rocketCont{
+    position: absolute;
+    transform: translate(-40%, -50%);
+    left: 50%;
+    top: 50%;
+    height: 75%;
+  }
+  
+  #compassRocket{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 1.5vh 23vh 1.5vh;
+    border-color: transparent transparent red transparent;
+    transform: translateY(-10%);
+  }
+  
+  #northCont{
+    position: absolute;
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: 50%;
+    height: 50%;
+  }
+  
+  #compassNorth{
+    transform-origin: bottom;
+    height: 100%;
+    width: 0.5vh;
+    /* background-color: black; */
+    transform: translateX(50%);
+  }
+  
+  #headingCont{
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  #rawHeading{
+    width: fit-content;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 2px solid grey;
+  }
+  
+  .multilineSpan{
+    white-space: pre;
+  }
+  
+  #topRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
